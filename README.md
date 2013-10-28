@@ -4,6 +4,10 @@ Sandra.Snow.AzureTemplate
 A Snow template that uses Bootstrap 3, and is designed for static site deployment Azure websites.
 The template is pre-configured to play nicely with Azure website deployments via Kudu, so simply creating your own Git repo on GitHub and pointing Azure to it will have you launched instantly.
 
+# Demo
+
+Click here: http://snowtemplate.azurewebsites.net/
+
 # Usage
 
 1. Create your own repository on GitHub
