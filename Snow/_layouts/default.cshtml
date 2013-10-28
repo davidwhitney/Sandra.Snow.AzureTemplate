@@ -1,0 +1,42 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Snow.ViewModels.BaseViewModel>
+@using System.Collections.Generic
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <div id="primary" class="site-content">
+        <div id="content" role="main">
+        @RenderBody()
+        </div>
+        <!-- #content -->
+    </div>
+
+    <aside id="archives-4" class="widget widget_archive">
+        <h1 class="widget-title">Archive</h1>
+        <ul class="posts">
+        @foreach(var item in Model.MonthYearList)
+        {
+              <li><a href="@item.Url">@item.Title</a></li>
+        }
+        </ul>
+    </aside>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

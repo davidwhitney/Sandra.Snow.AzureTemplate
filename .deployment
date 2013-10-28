@@ -1,0 +1,2 @@
+[config]
+command = compile.snow.bat
